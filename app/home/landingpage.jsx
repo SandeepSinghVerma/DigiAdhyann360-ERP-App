@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import {
-  View,
-  Text,
-  SafeAreaView,
-  StatusBar,
-  Image,
-  Alert,
-} from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRouter } from "expo-router";
-import Icon from "react-native-vector-icons/Feather";
+import { useEffect, useState } from "react";
+import {
+  Alert,
+  Image,
+  SafeAreaView,
+  StatusBar,
+  Text,
+  View,
+} from "react-native";
 import Toast from "react-native-toast-message";
-import CustomButton from "../../src/components/CustomButton";
+import Icon from "react-native-vector-icons/Feather";
 import LogoImage from "../../assets/images/DigiAdhyann360.png";
+import CustomButton from "../../components/CustomButton";
 
 const LandingPage = () => {
   const [username, setUsername] = useState("");
